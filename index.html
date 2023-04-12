@@ -2,63 +2,15 @@
 <html>
 <head>
 <title>Aella Zendesk</title>
-<style>
-
-.conversation-badge {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  background: #2054D2;
-  height: 20px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px 30px;
-  cursor: pointer;
-  margin: auto;
-  width: 30%;
-  z-index: 100;
-}
-
-table {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-td {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-</style>
- 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<table>
-<tr>
-    <td>
-        <div class="conversation-badge"  onclick="myFunction()"><span style="color:white;">Start</span></div>
-    </td>
-    <td>
-    </td>
-</tr>
-</table>
 </body>
 <!-- Start of aellacredit Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=55606faa-fd8d-4a1a-b448-4ec3db5f43f4"> </script>
 <!-- End of aellacredit Zendesk Widget script -->
 <script>
-function myFunction() {
+document.body.addEventListener('click', console.log("click"), true);
   zE('messenger', 'open');
-}
 </script>
 </html>
